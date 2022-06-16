@@ -1,13 +1,57 @@
 <!DOCTYPE html>
-<html lang= "en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel = "stylesheet"  href="styles/style.css">
-        <title>Floyd Cain | Portfolio</title>
-    </head>
-    <body>
-        <h1>Hello world!</h1>
-        <p>I'm hosted with Github Pages.</p>
-    </body>
+
+<html lang="en">
+
+<head>
+    <title>Floyd Cain | Portfolio</title>
+    <link rel="icon" href="https://api.iconify.design/emojione-monotone/briefcase.svg">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-US-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+
+</head>
+
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+            <header class="grid-contianer">
+                <ul class="navBar item2">
+                    <li><a href="index.html">About</a></li>
+                    <li>
+                        <p>| <a href="pages/showcase.html">Showcase</a></p>
+                    </li>
+                    <li><button class="button-mini" id="btnContact">Contact</button></li>
+                </ul>
+            </header>
+
+            <main>
+                <img id="portrait" src="/images/portrait.jpg">
+                <h1 class="page-header">Floyd Cain</h1>
+                <p>College graduate ready to launch a career in software development. Motivated from studies and home projects alike. Excited to expand knowledge and experience through professional development.</p>
+                <form action="pages/showcase.html">
+                    <button id="btnShowcase"><strong>Showcase</strong></button>
+                </form>
+
+                <div class="media-section">
+                    <a href="https://www.linkedin.com/in/floydcain/" target="_blank"><span class="iconify"
+                            data-icon="simple-icons:linkedin"></span></a>
+                    <a href="https://github.com/cainfe" target="_blank"><span class="iconify"
+                            data-icon="simple-icons:github"></span></a>
+                </div>
+            </main>
+        </div>
+
+
+        <footer>
+            <p>
+                <a href="pages/about.html">about me</a> | 
+                <a href="pages/contact.html">contact me</a> | 
+                This page is hosted with Github Pages.
+            </p>
+        </footer>
+    </div>
+</body>
+
 </html>
