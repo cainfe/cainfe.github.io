@@ -10,52 +10,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/cascadia-code" rel="stylesheet">
 
 </head>
 
 <body>
-    <div id="page-container">
-        <div id="content-wrap">
-            <!--<header class="grid-contianer">
-                <ul class="navBar item2">
-                    <li><a href="index.html">About</a></li>
-                    <li>
-                        <p>| <a href="pages/showcase.html">Showcase</a></p>
-                    </li>
-                    <li><button class="button-mini" id="btnContact">Contact</button></li>
-                </ul>
-            </header>-->
-
-            <main>
-                <img id="portrait" src="/images/portrait.jpg">
-                <h1 class="page-header">Floyd Cain</h1>
-                <p>I’m a recent Computer Science graduate from Stephen F. Austin State University with extensive experience in Windows OS, Java, PHP, and GitHub. During my college career, I worked part-time at the East Texas Professional Credit Union where I was recognized as employee of the month in January 2022 for my work ethic and dependability.<br><br>
-
-                    In my spare time, I enjoy practicing software and web development, playing video games, reading, and learning new skills. I am actively seeking opportunities in software development where I can expand my knowledge and experience. <br><br>
-                    
-                    With my strong problem-solving skills and passion for technology, I’m confident that I can make valuable contributions to any team.</p>
-                <!--<form action="pages/showcase.html">
-                    <button id="btnShowcase"><strong>Showcase</strong></button>
-                </form>-->
-
-                <div class="media-section">
+    <main>
+        <div class="flex-container">
+            <fieldset id="section-summary" class="section-container">
+                <legend class="section-title">Summary</legend>
+            </fieldset>
+            <fieldset id="section-contact" class="section-container">
+                <legend class="section-title">Contact</legend>
+                <div>
                     <a href="https://www.linkedin.com/in/floydcain/" target="_blank"><span class="iconify"
                             data-icon="simple-icons:linkedin"></span></a>
                     <a href="https://github.com/cainfe" target="_blank"><span class="iconify"
                             data-icon="simple-icons:github"></span></a>
                 </div>
-            </main>
+            </fieldset>
+            <!-- A carousel for space. -->
+            <fieldset id="section-projects" class="section-container">
+                <legend class="section-title">Projects</legend>
+            </fieldset>
+            <!-- Use keywords and icons to visually represent skillset. -->
+            <fieldset id="section-skills" class="section-container">
+                <legend class="section-title">Skills</legend>
+            </fieldset>
+            <fieldset id="section-education" class="section-container">
+                <legend class="section-title">Education</legend>
+            </fieldset>
+            <fieldset id="section-awards" class="section-container">
+                <legend class="section-title">Awards & Achievements</legend>
+            </fieldset>
         </div>
+    </main>
 
 
-        <footer>
-            <p>
-                <!--<a href="pages/about.html">about me</a> | 
-                <a href="pages/contact.html">contact me</a> | -->
-                This page is hosted with Github Pages.
-            </p>
-        </footer>
-    </div>
+    <footer>
+        <p>
+            This page is hosted with Github Pages.
+        </p>
+    </footer>
 </body>
 
 </html>
