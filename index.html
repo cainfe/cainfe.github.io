@@ -20,9 +20,9 @@
             <fieldset id="section-summary" class="section-container">
                 <legend class="section-title">Summary</legend>
                 <div>
-                    I am a passionate software developer driven to build powerful tools that improve people's lives. I take pride in the quality of my work, enjoy solving complex problems, and thrive in dynamic environments.<br><br>
+                    <p>I am a passionate software developer driven to build powerful tools that improve people's lives. I take pride in the quality of my work, enjoy solving complex problems, and thrive in dynamic environments.<br><br>
                     My experience during my college career at Stephen F. Austin State University ignited my passion for software development. In my current role at East Texas Professional Credit Union, I have 2 years of experience building software solutions using Java and various other technologies like HTML, PHP, and SQL. I'm also intrigued about contributing to the open-source community and have actively participated in TradeNote on GitHub.<br><br>
-                    I'm always eager to connect with fellow developers and explore new challenges. Feel free to reach out if you have any interesting projects or opportunities.
+                    I'm always eager to connect with fellow developers and explore new challenges. Feel free to reach out if you have any interesting projects or opportunities.</p>
                 </div>
             </fieldset>
             <fieldset id="section-contact" class="section-container">
@@ -42,6 +42,44 @@
             <fieldset id="section-skills" class="section-container">
                 <legend class="section-title">Skills</legend>
             </fieldset>
+            <fieldset id="section-experience" class="section-container">
+                <legend class="section-title">Experience</legend>
+                <div id="experience-carousel" class="carousel">
+                    <div class="slides">
+                        <div class="slide">
+                            <h4>Junior Systems Administrator | East Texas Professional Credit Union</h4>
+                            <h5><i>Jan. 2024 - Present</i></h5>
+                            <ul>
+                                <li>Championed the need for improved password management, driving the planning, proposal, and successful implementation of a new system.</li>
+                                <li>Identified inefficiencies in the existing close account procedure and developed a streamlined program using HTML, CSS, JavaScript, and PowerOn, increasing efficiency and ensuring complete account closure.</li>
+                                <li>Actively fostered clear communication and collaboration with stakeholders, vendors, and teammates, ensuring smooth project implementation.</li>
+                            </ul>
+                        </div>
+                        <div Class="slide">
+                            <h4>IT Service Specialist II | East Texas Professional Credit Union</h4>
+                            <h5><i>Sept. 2022 - Jan. 2024</i></h5>
+                            <ul>
+                                <li>Effectively communicated with staff and management to collaborate on projects and resolve a high volume of technical issues.</li>
+                                <li>Developed a Java application to automate a manual file conversion process, streamlining workflow by an estimated 60% and improving accuracy of resulting files.</li>
+                                <li>Enhanced staff landing page through HTML, CSS, and JavaScript, resulting in increased visual engagement and faster access to critical resources.</li>
+                                <li>Identified inefficiencies in processing large member data files and developed custom Java scripts to automate matching and validation, leading to improved accuracy and significant time savings.</li>
+                            </ul>
+                        </div>
+                        <div Class="slide">
+                            <h4>Teller II | East Texas Professional Credit Union</h4>
+                            <h5><i>June 2018 - Sept. 2022</i></h5>
+                            <ul>
+                                <li>Achieved 99% accuracy in high-volume transactions.</li>
+                                <li>Maintained a perfect record of vault security for over 3 years, ensuring the integrity of records.</li>
+                                <li>Facilitated clear communication between membership and staff to effectively address issues and fulfill member needs.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a class="prev" onclick="changeSlide('experience-carousel', -1)">&#10094;</a>
+                    <a class="next" onclick="changeSlide('experience-carousel', 1)">&#10095;</a>
+                    <div class="slide-counter"></div>
+                </div>
+            </fieldset>
             <fieldset id="section-education" class="section-container">
                 <legend class="section-title">Education</legend>
             </fieldset>
@@ -57,6 +95,8 @@
             This page is hosted with Github Pages.
         </p>
     </footer>
+
+    <script src="scripts/carousel.js"></script>
 </body>
 
 </html>
