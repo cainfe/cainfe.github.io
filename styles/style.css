@@ -41,7 +41,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-container {
     border: 1px solid var(--foreground-color);
-    flex-basis: 45%;
+    box-sizing: border-box;
+    margin: 1%
+}
+
+.section-container.half-width {
+    flex-basis: 48%;
+}
+
+.section-container.full-width {
+    flex-basis: 100%;
 }
 
 .section-title {
