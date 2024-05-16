@@ -1,6 +1,7 @@
 let slideshowPosMap = new Map();
 
 showSlides("experience-carousel", 0);
+showSlides("education-carousel", 0);
 
 function showSlides(slideshowID, slideIndex) {
   let i;
