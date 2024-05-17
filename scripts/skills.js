@@ -33,11 +33,12 @@ for(let i = 0; i < skills.length; i++) {
 }
 
 function modifySelectedSkill(skillName, skillLevel) {
-  let selectedSkillName = document.getElementById('selected-skill-name');
-  let selectedSkillLevel = document.getElementById('selected-skill-progress');
+    let selectedSkillName = document.getElementById('selected-skill-name');
+    let selectedSkillLevel = document.getElementById('selected-skill-meter');
 
-  selectedSkillName.textContent = skillName;
-  selectedSkillLevel.value = skillLevel;
+    selectedSkillName.textContent = skillName;
+    selectedSkillLevel.style.transition = 'width 0.5s';
+    selectedSkillLevel.style.width = skillLevel + '%';
 }
 
 window.onload = function() {

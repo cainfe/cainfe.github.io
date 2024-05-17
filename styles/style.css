@@ -103,6 +103,10 @@ h1, h2, h3, h4, h5, h6 {
     right: 20px;
 }
 
+.skills-list {
+    text-align: center;
+}
+
 .skill {
     display: inline-block;
 }
@@ -120,4 +124,22 @@ h1, h2, h3, h4, h5, h6 {
 
 #selected-skill-summary {
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#outer-skill-meter-border {
+    text-align: left;
+    width: 100%;
+    border: 1px solid var(--foreground-color);
+    border-radius: 15px;
+
+    overflow: hidden;
+}
+
+#selected-skill-meter {
+    height: 20px;
+    background-color: var(--foreground-color);
+    border: 2px solid var(--background-color);
+    border-radius: 15px;
 }
