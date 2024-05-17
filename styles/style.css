@@ -32,6 +32,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0;
 }
 
+.focused {
+    color: var(--focus-color);
+}
+
 .flex-container {
     display: flex;
     flex-direction: row;
@@ -97,4 +101,45 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     top: -10px;
     right: 20px;
+}
+
+.skills-list {
+    text-align: center;
+}
+
+.skill {
+    display: inline-block;
+}
+
+.skill:hover {
+    background-color: var(--foreground-color);
+    color: var(--background-color);
+}
+
+.skill-icon {
+    width: 50px;
+    height: 50px;
+    margin: 1px;
+}
+
+#selected-skill-summary {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#outer-skill-meter-border {
+    text-align: left;
+    width: 100%;
+    border: 1px solid var(--foreground-color);
+    border-radius: 15px;
+
+    overflow: hidden;
+}
+
+#selected-skill-meter {
+    height: 20px;
+    background-color: var(--foreground-color);
+    border: 2px solid var(--background-color);
+    border-radius: 15px;
 }
