@@ -103,6 +103,21 @@ h1, h2, h3, h4, h5, h6 {
     right: 20px;
 }
 
+.project-image-container {
+    display: inline-block;
+    width: 33%;
+}
+
+.project-image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.project-text-container {
+    display: inline-block;
+    width: 66%;
+}
+
 .skills-list {
     text-align: center;
 }
