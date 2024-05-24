@@ -103,19 +103,26 @@ h1, h2, h3, h4, h5, h6 {
     right: 20px;
 }
 
+.project-slide-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 .project-image-container {
-    display: inline-block;
-    width: 33%;
+    flex: 1;
+    padding: 10px;
+}
+
+.project-text-container {
+    flex: 2;
+    align-self: flex-start;
 }
 
 .project-image-container img {
     width: 100%;
     height: auto;
-}
-
-.project-text-container {
-    display: inline-block;
-    width: 66%;
 }
 
 .skills-list {
