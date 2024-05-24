@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 15px;
 }
 
-.prev, .next {
+.carousel-prev, .carousel-next {
     cursor: pointer;
     position: absolute;
     top: 0;
@@ -84,17 +84,17 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
 }
 
-.prev:hover, .next:hover {
+.carousel-prev:hover, .carousel-next:hover {
     background-color: rgb(102, 255, 102, 0.2);
     color: var(--foreground-color)
 }
 
-.prev {
+.carousel-prev {
     left: -12px;
     border-radius: 0 10px 0 0;
 }
 
-.next {
+.carousel-next {
     right: -12px;
     border-radius: 10px 0 0 0;
 }
