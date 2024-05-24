@@ -45,8 +45,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-container {
     border: 1px solid var(--foreground-color);
+    border-radius: 10px;
     box-sizing: border-box;
-    margin: 1%
+    margin: 1%;
+    margin-top: 0;
 }
 
 .section-container.half-width {
