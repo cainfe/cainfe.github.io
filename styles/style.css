@@ -208,3 +208,13 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     cursor: pointer;
 }
+
+@media screen and (max-width: 800px) {
+    .section-container.half-width {
+        flex-basis: 100%;
+    }
+
+    .project-slide-content {
+        flex-direction: column-reverse;
+    }
+}
