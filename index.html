@@ -42,7 +42,7 @@
                         <div class="slide">
                             <div class="project-slide-content">
                                 <div class="project-image-container">
-                                    <img src="images/tradenote.jpg" alt="TradeNote">
+                                    <img src="images/tradenote.png" alt="TradeNote: Candlestick Charts" class="zoomable-img">
                                 </div>
                                 <div class="project-text-container">
                                     <h4>TradeNote: Candlestick Charts with Entry/Exit Notations</h4>
@@ -65,7 +65,7 @@
                         <div class="slide">
                             <div class="project-slide-content">
                                 <div class="project-image-container">
-                                    <img src="images/BookYourBook.jpg" alt="TradeNote">
+                                    <img src="images/BookYourBook.png" alt="Book Your Book: Book Shelf" class="zoomable-img">
                                 </div>
                                 <div class="project-text-container">
                                     <h4>Book Your Book: Simulated Bookstore Web App</h4>
@@ -199,8 +199,15 @@
         </p>
     </footer>
 
+    <div id="zoom-modal" class="modal">
+        <span class="zoom-modal-close">&times;</span>
+        <img class="zoom-modal-content" id="zoom-modal-img">
+        <div id="zoom-modal-caption"></div>
+    </div>
+
     <script src="scripts/carousel.js"></script>
     <script src="scripts/skills.js"></script>
+    <script src="scripts/imageZoom.js"></script>
 </body>
 
 </html>
