@@ -105,6 +105,28 @@ h1, h2, h3, h4, h5, h6 {
     right: 20px;
 }
 
+.project-slide-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-image-container {
+    flex: 1;
+    padding: 10px;
+}
+
+.project-text-container {
+    flex: 2;
+    align-self: flex-start;
+}
+
+.project-image-container img {
+    width: 100%;
+    height: auto;
+}
+
 .skills-list {
     text-align: center;
 }
@@ -144,4 +166,43 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--foreground-color);
     border: 2px solid var(--background-color);
     border-radius: 15px;
+}
+
+.zoomable-img {
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9); 
+    text-align: center;
+}
+
+.zoom-modal-content {
+    width: 80%;
+}
+
+.zoom-modal-close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: var(--foreground-color);
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.zoom-modal-close:hover,
+.zoom-modal-close:focus {
+    color: var(--focus-color);
+    text-decoration: none;
+    cursor: pointer;
 }

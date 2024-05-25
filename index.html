@@ -37,6 +37,52 @@
 
             <fieldset id="section-projects" class="section-container full-width">
                 <legend class="section-title">Projects</legend>
+                <div id="project-carousel" class="carousel">
+                    <div class="slides">
+                        <div class="slide">
+                            <div class="project-slide-content">
+                                <div class="project-text-container">
+                                    <h4>TradeNote: Candlestick Charts with Entry/Exit Notations</h4>
+                                    <h5><i>Feb. 2024 - Mar. 2024</i></h5>
+                                    <p>Contributed a major feature to the open-source project TradeNote on GitHub - candlestick charts with notations for entries and exits. This feature significantly improved data visualization and technical analysis capabilities for users.</p>
+                                </div>
+                                <div class="project-image-container">
+                                    <img src="images/tradenote.png" alt="TradeNote: Candlestick Charts" class="zoomable-img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="project-slide-content">
+                                <div class="project-text-container">
+                                    <h4>Data Conversion Application | East Texas Professional Credit Union</h4>
+                                    <h5><i>Nov. 2022 - Feb. 2023</i></h5>
+                                    <p>I was tasked with developing a method for converting raw data files into a defined format to be received by one of our partners. I constructed a robust application that would be able to detect errors in the raw data, allow the user to easily repair the errors and format the data. The application was also built to be easily updated if the format changes in the future.<br>
+                                        <br>
+                                        In this project I had the opportunity to learn and utilize Java Swing. The finished application has received positive feedback.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="project-slide-content">
+                                <div class="project-text-container">
+                                    <h4>Book Your Book: Simulated Bookstore Web App</h4>
+                                    <h5><i>Sep. 2021 - Dec. 2021</i></h5>
+                                    <p>Our team was tasked with creating an application that would allow users to view and simulate ordering from a selection of books stored in a relational database. The application also provides some information about the books such as its publisher, author, genres, etc. All book and user data is editable by site administrators.<br>
+                                        <br>
+                                        For this project our team decided to learn and utilize PHP to create a web application.<br>
+                                        <br>
+                                        The source code can be found in my GitHub repository <a href="https://github.com/cainfe/book-your-book" target="_blank">here</a>.</p>
+                                </div>
+                                <div class="project-image-container">
+                                    <img src="images/BookYourBook.png" alt="Book Your Book: Book Shelf" class="zoomable-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="prev" onclick="changeSlide('project-carousel', -1)">&#10094;</a>
+                    <a class="next" onclick="changeSlide('project-carousel', 1)">&#10095;</a>
+                    <div class="slide-counter"></div>
+                </div>
             </fieldset>
 
             <fieldset id="section-skills" class="section-container half-width">
@@ -153,8 +199,15 @@
         </p>
     </footer>
 
+    <div id="zoom-modal" class="modal">
+        <span class="zoom-modal-close">&times;</span>
+        <img class="zoom-modal-content" id="zoom-modal-img">
+        <div id="zoom-modal-caption"></div>
+    </div>
+
     <script src="scripts/carousel.js"></script>
     <script src="scripts/skills.js"></script>
+    <script src="scripts/imageZoom.js"></script>
 </body>
 
 </html>
