@@ -41,6 +41,8 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    max-width: 1080px;
+    margin: auto;
 }
 
 .section-container {
