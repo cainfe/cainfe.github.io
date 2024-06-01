@@ -107,6 +107,32 @@ h1, h2, h3, h4, h5, h6 {
     right: 20px;
 }
 
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.contact-summary {
+    text-align: center;
+    align-self: center;
+}
+
+.contact-image {
+    width: 175px;
+    height: 175px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
 .project-slide-content {
     display: flex;
     flex-direction: row;
@@ -216,5 +242,9 @@ h1, h2, h3, h4, h5, h6 {
 
     .project-slide-content {
         flex-direction: column-reverse;
+    }
+
+    .contact-content {
+        flex-direction: column;
     }
 }
