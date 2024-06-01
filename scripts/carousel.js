@@ -21,6 +21,12 @@ function showSlides(slideshowID, slideIndex) {
   slides[slideIndex].style.display = "block";
 
   slideshowPosMap.set(slideshowID, slideIndex);
+
+  if (slides.length == 1) {
+    slideCounter.style.display = "none";
+    slideshow.getElementsByClassName("carousel-prev")[0].style.display = "none";
+    slideshow.getElementsByClassName("carousel-next")[0].style.display = "none";
+  }
   slideCounter.innerHTML = `${slideIndex + 1} / ${slides.length}`;
 }
 
