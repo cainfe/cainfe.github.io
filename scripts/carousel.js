@@ -3,6 +3,7 @@ let slideshowPosMap = new Map();
 showSlides("project-carousel", 0);
 showSlides("experience-carousel", 0);
 showSlides("education-carousel", 0);
+showSlides("certifications-carousel", 0);
 
 function showSlides(slideshowID, slideIndex) {
   let i;
