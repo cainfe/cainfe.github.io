@@ -27,7 +27,12 @@ a:active {
     color: var(--focus-color);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -79,7 +84,8 @@ h1, h2, h3, h4, h5, h6 {
     padding: 15px;
 }
 
-.carousel-prev, .carousel-next {
+.carousel-prev,
+.carousel-next {
     cursor: pointer;
     position: absolute;
     top: 0;
@@ -91,7 +97,8 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
 }
 
-.carousel-prev:hover, .carousel-next:hover {
+.carousel-prev:hover,
+.carousel-next:hover {
     background-color: rgb(102, 255, 102, 0.2);
     color: var(--foreground-color)
 }
@@ -217,7 +224,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.9); 
+    background-color: rgba(0, 0, 0, 0.9);
     text-align: center;
 }
 

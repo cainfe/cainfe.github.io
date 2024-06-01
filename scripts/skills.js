@@ -2,17 +2,17 @@ let skills = document.getElementsByClassName('skill');
 let focusedSkill = null;
 
 
-for(let i = 0; i < skills.length; i++) {
-  skills[i].addEventListener('mouseover', function() {
+for (let i = 0; i < skills.length; i++) {
+  skills[i].addEventListener('mouseover', function () {
     let skillName = this.children[0].getAttribute('data-skill-name');
     let skillLevel = this.children[0].getAttribute('data-skill-progress');
 
     modifySelectedSkill(skillName, skillLevel);
   });
 
-  skills[i].addEventListener('click', function() {
+  skills[i].addEventListener('click', function () {
     if (focusedSkill) {
-        focusedSkill.classList.remove('focused');
+      focusedSkill.classList.remove('focused');
     }
 
     focusedSkill = this;
@@ -24,7 +24,7 @@ for(let i = 0; i < skills.length; i++) {
     modifySelectedSkill(skillName, skillLevel);
   });
 
-  skills[i].addEventListener('mouseout', function() {
+  skills[i].addEventListener('mouseout', function () {
     let skillName = focusedSkill.children[0].getAttribute('data-skill-name');
     let skillLevel = focusedSkill.children[0].getAttribute('data-skill-progress');
 
@@ -33,15 +33,15 @@ for(let i = 0; i < skills.length; i++) {
 }
 
 function modifySelectedSkill(skillName, skillLevel) {
-    let selectedSkillName = document.getElementById('selected-skill-name');
-    let selectedSkillLevel = document.getElementById('selected-skill-meter');
+  let selectedSkillName = document.getElementById('selected-skill-name');
+  let selectedSkillLevel = document.getElementById('selected-skill-meter');
 
-    selectedSkillName.textContent = skillName;
-    selectedSkillLevel.style.transition = 'width 0.5s';
-    selectedSkillLevel.style.width = skillLevel + '%';
+  selectedSkillName.textContent = skillName;
+  selectedSkillLevel.style.transition = 'width 0.5s';
+  selectedSkillLevel.style.width = skillLevel + '%';
 }
 
-window.onload = function() {
+window.onload = function () {
   let javaSkill = document.querySelector('[data-skill-name="Java"]');
   if (javaSkill) {
     let clickEvent = new MouseEvent('click', {
