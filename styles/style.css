@@ -200,10 +200,21 @@ h6 {
     margin: 1px;
 }
 
+.certificate-badge-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.certificate-badge {
+    margin-top: 10px;
+    max-height: 250px;
+}
+
 #ocajse8-badge {
     width: 100%;
     height: auto;
-    margin-top: 10px;
 }
 
 #selected-skill-summary {
